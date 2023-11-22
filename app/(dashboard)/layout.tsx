@@ -12,15 +12,15 @@ const DashboardLayout = async (
     }
 ) => {
 
-    const apiLimitCount = await getApiLimitCount();
-    const proUser = await checkSubscription();
+    // const apiLimitCount = await getApiLimitCount();
+    // const proUser = await checkSubscription();
 
     return (
         <div className="h-full relative">
             <div className="hidden h-full md:flex mg:flex-col md:fixed md:w-72 md:inset-y-0  bg-gray-900">
                     <Sidebar 
-                     proUser={proUser}
-                     apiLimitCount={apiLimitCount}
+                     proUser={true}
+                     apiLimitCount={1}
                     />
             </div>
             <main className="md:pl-72">
